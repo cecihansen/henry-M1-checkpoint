@@ -69,7 +69,8 @@ describe('Checkpoint Tests', function() {
       expect(linkedList.size()).to.equal(0);
       linkedList.add(1);
       linkedList.add(2);
-      expect(linkedList.size()).to.equal(2);
+      expect(linkedList.size()).to.
+      equal(2);
       linkedList.add(3);
       expect(linkedList.size()).to.equal(3);
     });
@@ -94,9 +95,9 @@ describe('Checkpoint Tests', function() {
       linkedList.add(2);
       linkedList.add(3);
       var revertedLinkedList = linkedList.reverse();
-      expect(revertedLinkedList.remove().value).to.equal(1);
-      expect(revertedLinkedList.remove().value).to.equal(2);
-      expect(revertedLinkedList.remove().value).to.equal(3);
+      expect(revertedLinkedList.remove()).to.equal(1);
+      expect(revertedLinkedList.remove()).to.equal(2);
+      expect(revertedLinkedList.remove()).to.equal(3);
     });
   });
 
